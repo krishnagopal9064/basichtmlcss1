@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbees Technologies | Payment</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <h1> <a href="home.html" style="font-family: 'Righteous', cursive; padding: 10px; margin: 10px; text-decoration: none; font-size: 200%; "> Playbees Technologies </a></h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services We Offer
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="service.html">Software Development</a></li>
+                  <li><a class="dropdown-item" href="service.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="service.html">Mobile Apps</a></li>
+                  <li><a class="dropdown-item" href="service.html">SEO</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="service.html">To know more, Click here...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="contact.html">Contact us.</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div>  <br></div>
+
+
+    <div class="full">
+    <form action= "" method="POST">
+    <h1 class="main_h">Online Payment Option</h1>
+    <hr>
+    <h1>Personal Information</h1>
+    <p style="color: #000;">* Name : <br> <input type="text" name="name" class="text" placeholder="Abc Xyz" required> </p>   
+    <p style="color: #000;" >* Gender<br>
+		&nbsp;&nbsp;	<input type="radio" name="gender" value="Male"> Male
+			<input type="radio" name="gender" value="Female"> Female<br>
+    </p>
+   <p style="color: #000;"> * Address : <br>
+    <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your full address" required></textarea></p>
+    <p style="color: #000;" > * Email : <br> <input type="email" name="email" id="email" placeholder="abc@gmail.com" required> </p>
+    <p style="color: #000;" > * Contact No. : <br> <input type="number" name="number" id="number" placeholder="1234567890" required> </p>
+    <h1>Payment Information</h2>
+    <p style="color: #000;" >* Card Type : &nbsp;&nbsp; <select name="card_type" id="card_type" required>
+            <option value="">-- Select Card Type --</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="rupay">RuPay</option>
+            <option value="maestro">Maestro</option>
+            <option value="other">Other(if not in list)</option>
+        </select> </p>
+    <p style="color: #000;" >* Card Number : <br> <input type="number" name="card_number" id="card_number" placeholder="1111-2222-3333-4444" required></p>
+    <p style="color: #000;" >* Expiration Date : <br> <input type="date" name="exp_date" id="exp_date" required> </p>
+    <p style="color: #000;" >* Enter CVV : <br> <input type="password" name="cvv" id="cvv" required></p>
+    
+    <div class="d-grid gap-2 .mx-auto">
+        <button class="btn btn-primary" type="button">Generate OTP</button>
+      </div>   <br>
+      <p style="color: black;">* Enter your OTP :
+          <input type="password" name="otp" id="otp" required>
+      </p>
+
+    <input type="submit" value="Proceed to Pay">
+</form>
+</div>
+
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 segment-one md-mb-30 sm-mb-30">
+                <h3>Playbees Technologies</h3>
+                <p>We offer a huge range of FREE as well as premium services and products. Our FREE Srevices includes Website Development (Terms and Conditions applied), Workshop on selected topics, training, etc.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 segment-two md-mb-30 sm-mb-30">
+                <h2>Useful Link</h2>
+                    <ul>
+                    <li><a href="about.html">About US.</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="payment.html">Payment Option</a></li>
+                </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 segment-three sm-mb-30" >
+                    <h2>Drop a comment or any feedback</h2>
+                    <form action="#">
+                        <input type="email" placeholder="Enter Your E-mail" style="border-radius: 0px;"><br>
+                        <input type="text" placeholder="Enter Your Comment or Feedback" style="border-radius: 0px;"> <br>
+                        <button type="button" class="btn btn-primary" style="margin-left: 10px;border-radius: 0px; background-color: tomato; border: none;">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom-text">All rights reserved by &copy; Krishna Gopal Midya</p>
+</footer>
+
+<script src="javascript/bootstrap.min.js"></script>   
+
+</body>
+</html>
